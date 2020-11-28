@@ -1,4 +1,5 @@
 import UserItem from './UserItem';
+import './UsersList.css';
 
 const UsersList = (props) => {
   const { items } = props;
