@@ -8,12 +8,14 @@ const SideDrawer = (props) => {
       in={props.show}
       timeout={200}
       classNames="slide-in-left"
-      unmountOnExit
       mountOnEnter
+      unmountOnExit
     >
-      <aside className="side-drawer" onClick={props.onClick}>
-        {props.children}
-      </aside>
+      <div>
+        <aside className="side-drawer" onClick={props.onClick}>
+          {props.children}
+        </aside>
+      </div>
     </CSSTransition>
   );
   //render on the Portal
