@@ -5,7 +5,7 @@ import {
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
 } from '../../shared/util/validators';
-import './NewPlace.css';
+import './PlaceForm.css';
 
 const formReducer = (state, action) => {
   switch (action.type) {
@@ -35,6 +35,7 @@ const NewPlace = () => {
     inputs: {
       title: { value: '', isValid: false },
       description: { value: '', isValid: false },
+      address: { value: '', isValid: false },
     },
     isValid: false,
   });
